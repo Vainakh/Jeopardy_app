@@ -34,8 +34,12 @@
       <div ng-if="ctrl.randomQuestion[0].question" class="random-question">
         {{ctrl.randomQuestion[0].question}}
       </div>
-    </div>
 
+      <div class="quiz-value" ng-if="ctrl.randomQuestion[0].value">
+        Value: {{ ctrl.randomQuestion[0].value}}
+      </div>
+    </div>
+    
     <div class="quiz-answer">
       <div>
         Answer:
@@ -98,7 +102,7 @@
 
   .score {
     font-family: 'Tajawal', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     margin: 60px 0 30px 0;
   }
@@ -177,6 +181,11 @@
     justify-content: center;
     align-items: center;
     margin: 20px 0 0 0;
+  }
+
+  .quiz-value {
+    font-size: 25px;
+    margin-top: 10px;
   }
 
 
