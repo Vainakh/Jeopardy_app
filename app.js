@@ -23,8 +23,8 @@ this.getRandomQuestion = () => {
       console.log(response.data);
       console.log(response.data[0].value);
     }, error => {
-      console.error(error);//something wrong with the request
-    }).catch( err => console.log("Catch:", err))//something wrong with promise
+      console.error(error);
+    }).catch( err => console.log("Catch:", err))
   }
 
     this.incrementValue = () => {
